@@ -1,4 +1,4 @@
-package com.zhiweiwang.thoughtworks.homework.input;
+package com.zhiweiwang.thoughtworks.homework.controller;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.notNullValue;

@@ -1,4 +1,4 @@
-package com.zhiweiwang.thoughtworks.homework.input;
+package com.zhiweiwang.thoughtworks.homework.controller;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
@@ -23,18 +23,30 @@ public class SelectorTest {
 	Selector hotelSelector;
 
 	@Test
-	public void test_if_selected_the_best_hotel_currectly() throws IOException {
-		assertThat(hotelSelector.selectHotel(getParperedDate()), is("Bridgewood"));
+	public void test_if_selected_the_cheapest_hotel_currectly() throws IOException {
+		assertThat(hotelSelector.selectHotel(getReselvationList()), is("Bridgewood"));
 	}
 
-	private Collection<Reselvation> getParperedDate() {
+	@Test
+	public void test_if_selected_the_best_hotel_currectly() throws IOException {
+		assertThat(hotelSelector.selectHotel(getPriceEqualedReselvationList()), is("Bridgewood"));
+	}
+	
+	private Collection<Reselvation> getReselvationList() {
+		ArrayList<Reselvation> revs = new ArrayList<Reselvation>();
+		revs.add(buildReslvation("Lakewook", 4, 250));
+		revs.add(buildReslvation("Bridgewood", 5, 240));
+		revs.add(buildReslvation("Ridgewood", 5, 260));
+		return revs;
+	}
+
+	private Collection<Reselvation> getPriceEqualedReselvationList() {
 		ArrayList<Reselvation> revs = new ArrayList<Reselvation>();
 		revs.add(buildReslvation("Lakewook", 4, 250));
 		revs.add(buildReslvation("Bridgewood", 5, 250));
 		revs.add(buildReslvation("Ridgewood", 5, 260));
 		return revs;
 	}
-
 	private Reselvation buildReslvation(String name, int rating, int price) {
 		Reselvation res = new Reselvation();
 		res.setHotelName(name);

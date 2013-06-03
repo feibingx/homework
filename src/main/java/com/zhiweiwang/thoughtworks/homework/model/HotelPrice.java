@@ -9,9 +9,6 @@ public class HotelPrice {
 	int price;
 	int rating;
 	
-	public int getId() {
-		return id;
-	}
 	public void setId(int id) {
 		this.id = id;
 	}
@@ -21,14 +18,8 @@ public class HotelPrice {
 	public void setHotelname(String hotelname) {
 		this.hotelname = hotelname;
 	}
-	public String getDatecondition() {
-		return datecondition;
-	}
 	public void setDatecondition(String datecondition) {
 		this.datecondition = datecondition;
-	}
-	public String getCustomcondition() {
-		return customcondition;
 	}
 	public void setCustomcondition(String customcondition) {
 		this.customcondition = customcondition;
@@ -45,6 +36,4 @@ public class HotelPrice {
 	public void setRating(int rating) {
 		this.rating = rating;
 	}
-	
-	
 }
