@@ -1,4 +1,4 @@
-package com.zhiweiwang.thoughtworks.homework.controller;
+package com.zhiweiwang.thoughtworks.homework;
 
 import java.util.Collection;
 import com.zhiweiwang.thoughtworks.homework.model.Reselvation;

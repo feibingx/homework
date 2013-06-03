@@ -3,6 +3,8 @@ package com.zhiweiwang.thoughtworks.homework.controller;
 import java.io.IOException;
 
 import org.springframework.stereotype.Component;
+
+import com.zhiweiwang.thoughtworks.homework.InputHandler;
 import com.zhiweiwang.thoughtworks.homework.model.CustomerType;
 import com.zhiweiwang.thoughtworks.homework.model.DateType;
 import com.zhiweiwang.thoughtworks.homework.model.ReselvationRequest;

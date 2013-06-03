@@ -15,8 +15,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.zhiweiwang.thoughtworks.homework.controller.Calculator;
-import com.zhiweiwang.thoughtworks.homework.controller.InputHandler;
+import com.zhiweiwang.thoughtworks.homework.Calculator;
+import com.zhiweiwang.thoughtworks.homework.InputHandler;
 import com.zhiweiwang.thoughtworks.homework.model.Reselvation;
 import com.zhiweiwang.thoughtworks.homework.model.ReselvationRequest;
 

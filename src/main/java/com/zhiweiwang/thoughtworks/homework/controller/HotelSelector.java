@@ -1,10 +1,12 @@
 package com.zhiweiwang.thoughtworks.homework.controller;
 
 import java.util.Collection;
+import org.springframework.stereotype.Component;
 
-import com.zhiweiwang.thoughtworks.homework.model.HotelPrice;
+import com.zhiweiwang.thoughtworks.homework.Selector;
 import com.zhiweiwang.thoughtworks.homework.model.Reselvation;
 
+@Component
 public class HotelSelector implements Selector {
 
 	public String selectHotel(Collection<Reselvation> reselvations) {

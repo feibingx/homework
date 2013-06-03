@@ -8,6 +8,7 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import com.zhiweiwang.thoughtworks.homework.Calculator;
 import com.zhiweiwang.thoughtworks.homework.mapper.HotelMapper;
 import com.zhiweiwang.thoughtworks.homework.model.DateType;
 import com.zhiweiwang.thoughtworks.homework.model.HotelPrice;
