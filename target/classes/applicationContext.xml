@@ -10,8 +10,7 @@
 
 	<jdbc:initialize-database data-source="dataSource"
 		ignore-failures="DROPS">
-		<jdbc:script location="classpath:db-schema.sql" />
-		<jdbc:script location="classpath:db-test-data.sql" />
+		<jdbc:script location="classpath:db.sql" />
 	</jdbc:initialize-database>
 
 	<bean id="hotelMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">

@@ -1,12 +1,13 @@
 package com.zhiweiwang.thoughtworks.homework.model;
 
-public class Hotel {
+public class HotelPrice {
 
 	int id;
 	String hotelname;
 	String datecondition;
 	String customcondition;
 	int price;
+	int rating;
 	
 	public int getId() {
 		return id;
@@ -37,6 +38,12 @@ public class Hotel {
 	}
 	public void setPrice(int price) {
 		this.price = price;
+	}
+	public int getRating() {
+		return rating;
+	}
+	public void setRating(int rating) {
+		this.rating = rating;
 	}
 	
 	
