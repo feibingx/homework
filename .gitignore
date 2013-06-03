@@ -3,6 +3,7 @@
 target
 .settings
 log
+bin
 out
 debug
 .idea
